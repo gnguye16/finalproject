@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accessibility</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1>Accessibility</h1>
+        <p>Building pages that more people can use (keyboard, screen readers, contrast, and labels).</p>
+      </div>
+
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="code-editor.html">Code Editor</a></li>
+          <li><a href="html-semantic.html">HTML Semantics</a></li>
+          <li><a href="html-tables-forms.html">Tables & Forms</a></li>
+          <li><a href="css-styling-layout.html">CSS Styling & Layout</a></li>
+          <li><a href="accessibility.html" aria-current="page">Accessibility</a></li>
+          <li><a href="validation.html">Validation</a></li>
+          <li><a href="ethical-legal.html">Ethical & Legal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <main id="main" tabindex="-1">
+      <section>
+        <h2>Overview</h2>
+        <p class="lead">
+          Accessibility includes clear headings, alt text, keyboard navigation, readable contrast, and descriptive link text.
+        </p>
+      </section>
+
+      <section class="resource-grid" aria-label="Resources">
+        <article class="card">
+          <h2>YouTube Video</h2>
+          <div class="video-wrap">
+            <iframe
+              title="Web Accessibility basics"
+              src="https://www.youtube-nocookie.com/embed/20SHvU2PKsM"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p><a href="https://www.youtube.com/watch?v=20SHvU2PKsM" target="_blank">Watch this video on YouTube</a></p>
+          <p>
+            This video explains core accessibility ideas and common fixes like labels, headings, and keyboard-friendly navigation.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Article / Blog Post</h2>
+          <p>
+            <a class="article-link" href="https://webaim.org/intro/" target="_blank" rel="noopener">
+              WebAIM: Introduction to Web Accessibility
+            </a>
+          </p>
+          <p>
+            This article gives a beginner-friendly overview of accessibility and 
+            why it matters for real users. It explains how people with different abilities interact 
+            with websites using tools like screen readers and keyboard navigation. 
+            The article also highlights common accessibility barriers, such as poor color contrast and 
+            missing labels, and how they can affect usability. Reading this resource helped me understand that 
+            accessibility improves the experience for everyone, not just users with disabilities. Overall, it 
+            reinforced the importance of designing websites that are inclusive, usable, and thoughtfully structured.
+          </p>
+        </article>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-row">
+          <p><a class="article-link" href="#main">Back to top</a></p>
+          <p><a class="article-link" href="index.html">Back to Home</a></p>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
