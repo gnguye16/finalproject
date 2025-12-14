@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML Tables & Forms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1>HTML - Tables and Forms</h1>
+        <p>How to structure data with tables and collect input with accessible forms.</p>
+      </div>
+
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="code-editor.html">Code Editor</a></li>
+          <li><a href="html-semantic.html">HTML Semantics</a></li>
+          <li><a href="html-tables-forms.html" aria-current="page">Tables & Forms</a></li>
+          <li><a href="css-styling-layout.html">CSS Styling & Layout</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="validation.html">Validation</a></li>
+          <li><a href="ethical-legal.html">Ethical & Legal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <main id="main" tabindex="-1">
+      <section>
+        <h2>Overview</h2>
+        <p class="lead">
+          Tables are best for true data (rows/columns), and forms must use labels and clear controls so they are accessible.
+        </p>
+      </section>
+
+      <section class="resource-grid" aria-label="Resources">
+        <article class="card">
+          <h2>YouTube Video</h2>
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/aNC6LY34yVM"
+              title="HTML Tables and Forms tutorial video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p>
+            This video covers how to create tables and forms, including headings, labels, and common input types.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Article</h2>
+          <p>
+            <a class="article-link" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics" target="_blank" rel="noopener">
+              HTML Tables Basics
+            </a>
+          </p>
+          <p>
+            This article explains the correct table structure (caption, thead/tbody, th scope) and 
+            why it matters for accessibility. It helped me understand how screen readers use table
+            headers and scope attributes to read data correctly. The resource also shows how using 
+            captions makes tables easier to understand for all users, not just those using assistive technology. 
+            After reading this article, I was more confident creating tables that are both structured properly and accessible.
+          </p>
+        </article>
+      </section>
+
+      <section aria-labelledby="demo-table">
+        <h2 id="demo-table">Mini Table Example</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Practice Table: Helpful Resources</caption>
+            <thead>
+              <tr>
+                <th scope="col">Topic</th>
+                <th scope="col">Type</th>
+                <th scope="col">Why it helps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Tables</th>
+                <td>Article</td>
+                <td>Shows correct structure for data and accessibility.</td>
+              </tr>
+              <tr>
+                <th scope="row">Forms</th>
+                <td>Video</td>
+                <td>Explains labels, inputs, and common mistakes.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="demo-form">
+        <h2 id="demo-form">Mini Form Example</h2>
+        <p>This form is a demo</p>
+
+        <form action="#" method="post">
+          <div>
+            <label for="studentName">Name</label>
+            <input id="studentName" name="studentName" type="text" autocomplete="name" />
+          </div>
+
+          <div>
+            <label for="topic">Which topic do you want more help with?</label>
+            <select id="topic" name="topic">
+              <option value="">Select one</option>
+              <option value="semantic">Semantic HTML</option>
+              <option value="tables">Tables</option>
+              <option value="forms">Forms</option>
+              <option value="css">CSS</option>
+              <option value="a11y">Accessibility</option>
+            </select>
+          </div>
+
+        <fieldset>
+            <legend>Preferred resource type</legend>
+            <div class="inline">
+                <label>
+                <input type="radio" name="pref" value="video">
+                Video
+                </label>
+
+                <label>
+                <input type="radio" name="pref" value="article">
+                Article
+                </label>
+            </div>
+        </fieldset>
+
+          <div>
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+          </div>
+
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-row">
+          <p><a class="article-link" href="#main">Back to top</a></p>
+          <p><a class="article-link" href="index.html">Back to Home</a></p>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

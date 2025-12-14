@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Code Validation (HTML & CSS)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1>Code Validation - HTML and CSS</h1>
+        <p>Using validators to catch errors and follow web standards.</p>
+      </div>
+
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="code-editor.html">Code Editor</a></li>
+          <li><a href="html-semantic.html">HTML Semantics</a></li>
+          <li><a href="html-tables-forms.html">Tables & Forms</a></li>
+          <li><a href="css-styling-layout.html">CSS Styling & Layout</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="validation.html" aria-current="page">Validation</a></li>
+          <li><a href="ethical-legal.html">Ethical & Legal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <main id="main" tabindex="-1">
+      <section>
+        <h2>Overview</h2>
+        <p class="lead">
+          Validation helps you find missing tags, invalid attributes, and CSS typos so your site works consistently across browsers.
+        </p>
+      </section>
+
+      <section class="resource-grid" aria-label="Resources">
+        <article class="card">
+          <h2>YouTube Video</h2>
+          <div class="video-wrap">
+            <div class="video-wrap">
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/T_8tT0zwhZc"
+                title="Ethical and legal issues in web development video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            </div>
+          </div>
+          <p>
+            This video shows how to run your code through validators and how to interpret the errors so you can fix them.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Article</h2>
+          <p>
+            <a class="article-link" href="https://validator.w3.org/" target="_blank" rel="noopener">
+              W3C HTML Validator
+            </a>
+          </p>
+          <p>
+            The W3C HTML Validator checks your HTML for standard compliance and gives 
+            clear error messages that help you fix your code. It identifies common issues such as 
+            missing closing tags, incorrect nesting, and invalid attributes. 
+            The validator also explains where the error occurs, making it easier to locate and 
+            correct mistakes. Using this tool helped me improve the structure and reliability of my webpages. 
+            Overall, it reinforced the importance of writing clean, standards-compliant HTML that works consistently 
+            across browsers.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Extra tools</h2>
+        <ul>
+          <li>
+            <a class="article-link" href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">
+              W3C CSS Validator
+            </a>
+            — validates CSS and flags invalid properties or syntax issues.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Example of Validations</h2>
+        <p>
+            Here is an example of a validation I have tested on the index.html file of this project:
+        </p>
+        <img id="validation-image" src="resultsindex.png" alt="HTML Validation Example" />
+        <p>The validator only reported informational messages about trailing slashes on void elements, which do not affect HTML5 validity or functionality. No errors or warnings show.</p>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-row">
+          <p><a class="article-link" href="#main">Back to top</a></p>
+          <p><a class="article-link" href="index.html">Back to Home</a></p>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
